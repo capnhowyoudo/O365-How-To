@@ -211,3 +211,34 @@ All other fields in the CSV file are optional and may remain empty.
 <img width="738" height="518" alt="image" src="https://github.com/user-attachments/assets/6c4bdb26-e8e9-45b6-adc9-6d58cf229d63" />
 
 One last step remains: start the PST import to Office 365.
+
+# Initiate the PST import process in Office 365.
+
+You must wait for the analysis process to finish before importing the PST file to Office 365. When complete, the status will display Import completed, indicating it is ready to proceed.
+
+1. Mark the checkbox for the import job.
+2. Click Import to Office 365 to start the import.
+
+<img width="738" height="522" alt="image" src="https://github.com/user-attachments/assets/e26c502b-d746-411b-88b4-3acbefd771d0" />
+
+3. Choose No, I want to import everything and click Next to proceed.
+
+<img width="733" height="519" alt="image" src="https://github.com/user-attachments/assets/236dd817-f8b6-40a1-bd0b-dbac2e3a1b34" />
+
+4. Choose Submit
+
+<img width="736" height="518" alt="image" src="https://github.com/user-attachments/assets/2f85c942-fdd5-4a5a-8ab5-f0c879d76294" />
+
+5. The PST files have been successfully uploaded to the cloud. Click Done to finish.
+
+<img width="739" height="518" alt="image" src="https://github.com/user-attachments/assets/e9f0afd3-1017-408d-a98a-32a5baeed8da" />
+
+> :information_source: The PST import cannot be forced. You must wait for Microsoft to accept the request and begin processing.
+
+# Verify PST import job status.
+
+1. To check the PST import job status, click the import job in the list view and confirm that its status shows Completed.
+
+<img width="728" height="515" alt="image" src="https://github.com/user-attachments/assets/31f4f6ff-7aee-4cc6-a219-6c6104226da2" />
+
+Congratulations! You’ve successfully imported the PST file into Office 365.
