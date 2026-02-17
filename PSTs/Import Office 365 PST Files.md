@@ -56,4 +56,16 @@ If New Import Job is not visible, please wait for the previous changes to propag
 
 <img width="738" height="520" alt="image" src="https://github.com/user-attachments/assets/6acdcabd-4eb7-47a7-a41b-8404ec81b9d1" />
 
-7.
+7. Select Show network upload SAS URL.
+
+<img width="736" height="522" alt="image" src="https://github.com/user-attachments/assets/4f5af50d-1d97-458d-afbf-2d5f5706de2a" />
+
+8. Select Copy to clipboard to copy the SAS URL, which will be required in the following step.
+
+<img width="735" height="518" alt="image" src="https://github.com/user-attachments/assets/1610a089-c3f1-4198-a283-c7185707c7ab" />
+
+Next, you’ll upload your PST files to Office 365 with the AzCopy tool.
+
+> :information_source: Make sure not to cancel the import job—you’ll need to come back to this window to finish it. Canceling means starting the process again.
+
+# Upload PST files to Office 365.
