@@ -155,6 +155,35 @@ Confirm that the PST files are available in Azure storage, then proceed to the n
 
 # Create PST import mapping file
 
-1. Download the PST import mapping file [Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=544717)
+1. Download the PST import mapping file from [Microsoft Direct](https://go.microsoft.com/fwlink/p/?LinkId=544717)
 2. Launch Microsoft Excel.
 3. Open Excel Advanced Options and update the settings listed below:
+   >
+     - Uncheck Use system separators.
+     - Set Decimal separator to .
+     - Set Thousands separator to ,
+
+> :stop_sign:  Ensure the system separators are configured correctly; otherwise, uploading the CSV file in the next step will trigger a mapping file validation error.
+
+<img width="737" height="687" alt="image" src="https://github.com/user-attachments/assets/7de95057-1cc2-4ffb-81d7-cf9bec3aa16e" />
+
+4. Open the CSV file in Excel and modify the values.
+
+When editing the CSV file, pay close attention to each value and its purpose:
+
+- Workload: Specifies the service to which the data will be imported. For importing PST files to user mailboxes, set this to Exchange.
+- FilePath: The folder path in Azure Storage where the PST files were uploaded.
+- Name: The name of the PST file to import. This value is case-sensitive.
+- Mailbox: The email address of the target mailbox for the PST import.
+- IsArchive: Indicates whether the PST file should be imported into the user’s archive mailbox. Set to TRUE or FALSE. If you choose TRUE, ensure the user’s archive mailbox is enabled.
+- TargetRootFolder: Specifies the destination folder in the mailbox. Leave blank: Creates a new folder named Imported at the root level of the mailbox (same level as Inbox and other default folders). /: Imports the PST file’s folders and items to the top of the mailbox folder structure. /foldername: Imports all items and folders from the PST into a folder named foldername.
+
+All other fields in the CSV file are optional and may remain empty.
+
+<img width="739" height="143" alt="image" src="https://github.com/user-attachments/assets/1ecd1917-ae29-4cfa-b1cb-fa5a205e62b0" />
+
+5. You can open the CSV file with Notepad to change the values or just check that it’s saved as a comma-delimited file.
+
+<img width="742" height="162" alt="image" src="https://github.com/user-attachments/assets/47eba2ca-3736-47ec-96d2-af887e782580" />
+
+6. 
