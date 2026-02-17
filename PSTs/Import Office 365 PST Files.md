@@ -150,3 +150,11 @@ Follow the steps below to install Azure Storage Explorer and connect to your Azu
 <img width="736" height="569" alt="image" src="https://github.com/user-attachments/assets/30c1f974-b6aa-4808-8bdd-2e514ecb5e19" />
 
 > :information_source: PST files are automatically deleted from the Azure storage area. When there are no active import jobs, files within the ingestiondata container are purged 30 days after the most recent import job creation.
+
+Confirm that the PST files are available in Azure storage, then proceed to the next step.
+
+# Create PST import mapping file
+
+1. Download the PST import mapping file [Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=544717)
+2. Launch Microsoft Excel.
+3. Open Excel Advanced Options and update the settings listed below:
