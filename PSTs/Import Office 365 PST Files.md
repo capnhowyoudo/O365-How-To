@@ -186,4 +186,28 @@ All other fields in the CSV file are optional and may remain empty.
 
 <img width="742" height="162" alt="image" src="https://github.com/user-attachments/assets/47eba2ca-3736-47ec-96d2-af887e782580" />
 
-6. 
+# Choose the PST import mapping file.
+
+1. Navigate back to the PST import job, mark both checkboxes, and then click Next.
+
+<img width="738" height="519" alt="image" src="https://github.com/user-attachments/assets/d66d3972-1aa4-4a23-ad04-500be6ec045a" />
+
+2. Click Select mapping file.
+3. Navigate to the location of the PstImportMappingFile.csv file.
+4. Click Validate.
+
+<img width="740" height="520" alt="image" src="https://github.com/user-attachments/assets/670f7f1d-7ad9-4b8f-82aa-a78c946541ed" />
+
+5. If a green confirmation appears, the mapping file is valid. Proceed by clicking Next.
+
+<img width="737" height="517" alt="image" src="https://github.com/user-attachments/assets/99861b62-4e14-4a65-afca-8888c4c6a8ec" />
+
+6. Verify the PST import job and click Submit to start the import.
+
+<img width="738" height="520" alt="image" src="https://github.com/user-attachments/assets/b7dccd63-693e-4a4b-aac5-1efe74ed4081" />
+
+7. The PST files have been uploaded successfully. Just click Done to continue.
+
+<img width="738" height="518" alt="image" src="https://github.com/user-attachments/assets/6c4bdb26-e8e9-45b6-adc9-6d58cf229d63" />
+
+One last step remains: start the PST import to Office 365.
