@@ -69,3 +69,46 @@ Next, you’ll upload your PST files to Office 365 with the AzCopy tool.
 > :information_source: Make sure not to cancel the import job—you’ll need to come back to this window to finish it. Canceling means starting the process again.
 
 # Upload PST files to Office 365.
+
+1. Download [AzCopy (v10)](https://aka.ms/downloadazcopylatest) from Microsoft and place it in the C:\Temp directory. Since it is a standalone executable, installation is not necessary.
+
+<img width="741" height="556" alt="image" src="https://github.com/user-attachments/assets/d9093477-7158-4a1a-89a9-3a671f8ad135" />
+
+2. Verify where your PST files are stored.
+  
+You can use a network share (e.g., \\yourserver\PSTs) or a local folder (e.g., C:\PSTs). In this example, the PST files are located at C:\Temp\PSTs on the local drive.
+
+<img width="743" height="556" alt="image" src="https://github.com/user-attachments/assets/43c81c84-0984-4ecc-95ab-8b5c3e803edb" />
+
+3. Open Command Prompt as an administrator.
+4. Change the directory to C:\Temp\.
+5. Paste the SAS URL you copied earlier into the command.
+6. Run the command to upload the PST files to Azure.
+
+          cd C:\Temp\
+          azcopy.exe copy "C:\Temp\PSTs" "PASTE_Your_SAS_URL_HERE" --recursive
+
+7. After running the command, the output will look similar to the example below.
+
+          INFO: Scanning...
+          INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+          Job 37cf8d63-d431-e143-78c2-e3a9b85d0d7e has started
+          Log file is located at: C:\Users\administrator.EXOIP\.azcopy\37cf8d63-d431-e143-78c2-e3a9b85d0d7e.log
+
+          INFO: Could not read destination length. If the destination is write-only, use --check-length=false on the command line.
+          100.0 %, 1 Done, 0 Failed, 0 Pending, 0 Skipped, 1 Total, 2-sec Throughput (Mb/s): 26.7263
+
+
+          Job 37cf8d63-d431-e143-78c2-e3a9b85d0d7e summary
+          Elapsed Time (Minutes): 20.6073
+          Number of File Transfers: 1
+          Number of Folder Property Transfers: 0
+          Total Number of Transfers: 1
+          Number of Transfers Completed: 1
+          Number of Transfers Failed: 0
+          Number of Transfers Skipped: 0
+          TotalBytesTransferred: 4673750016
+          Final Job Status: Completed
+
+> :information_source: Azure Storage Explorer cannot be used to upload or modify PST files. The supported approach for importing PST files is through AzCopy. PST files uploaded to the Azure blob cannot be removed, and any attempt to delete them will trigger a permissions error.
