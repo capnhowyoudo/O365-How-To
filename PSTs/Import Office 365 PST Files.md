@@ -115,3 +115,38 @@ You can use a network share (e.g., \\yourserver\PSTs) or a local folder (e.g., C
 
 # View uploaded PST files in Office 365.
 
+Follow the steps below to install Azure Storage Explorer and connect to your Azure Storage account:
+
+1. Download and install the [Microsoft Azure Storage Explorer application](https://github.com/microsoft/AzureStorageExplorer/releases)
+
+<img width="741" height="519" alt="image" src="https://github.com/user-attachments/assets/94cb7b64-5268-40b2-ae80-4e1c87c581cb" />
+
+2. Launch Microsoft Azure Storage Explorer.
+3. Right-click Storage Accounts.
+4. Click Connect to Azure Storage.
+
+<img width="737" height="572" alt="image" src="https://github.com/user-attachments/assets/ebc64efe-4884-4226-a946-2b55370dd9c1" />
+
+5. Click on Blob container.
+
+<img width="739" height="558" alt="image" src="https://github.com/user-attachments/assets/b4ed0bb2-d7da-4ac7-a624-f362457f4343" />
+
+6. Choose Shared access signature URL (SAS) and select Next.
+
+<img width="737" height="561" alt="image" src="https://github.com/user-attachments/assets/d63a3ae3-2f31-44bd-b69b-46f10c6b0481" />
+
+7. Provide a Display name.
+8. Paste the Blob container SAS URL obtained earlier.
+9. Select Next.
+
+<img width="738" height="560" alt="image" src="https://github.com/user-attachments/assets/be3d83ac-e759-44e9-8a37-29c005c26e0c" />
+
+10. Click Connect.
+
+<img width="741" height="558" alt="image" src="https://github.com/user-attachments/assets/cc9d3fac-e45a-4ea5-8338-718975e982f4" />
+
+11. The PSTs folder and the PST file will now be visible.
+
+<img width="736" height="569" alt="image" src="https://github.com/user-attachments/assets/30c1f974-b6aa-4808-8bdd-2e514ecb5e19" />
+
+> :information_source: PST files are automatically deleted from the Azure storage area. When there are no active import jobs, files within the ingestiondata container are purged 30 days after the most recent import job creation.
