@@ -112,3 +112,6 @@ You can use a network share (e.g., \\yourserver\PSTs) or a local folder (e.g., C
           Final Job Status: Completed
 
 > :information_source: Azure Storage Explorer cannot be used to upload or modify PST files. The supported approach for importing PST files is through AzCopy. PST files uploaded to the Azure blob cannot be removed, and any attempt to delete them will trigger a permissions error.
+
+# View uploaded PST files in Office 365.
+
