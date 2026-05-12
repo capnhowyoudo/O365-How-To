@@ -1,0 +1,5 @@
+Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
+Exchange,SERVER01/PSTshareR1,cy13.pst,user1@contoso.com,FALSE,user1_outlookfiles_cy13,,,,
+Exchange,SERVER01/PSTshareR1,sent12.pst,user2@contoso.com,FALSE,user2_outlookfiles_sent12,,,,
+Exchange,SERVER01/PSTshareR1,analyzer.pst,user2@contoso.com,TRUE,user2_outlookfiles_analyzer,,,,
+Exchange,SERVER01/PSTshareR1,archive.pst,user2@contoso.com,TRUE,user2_outlookfiles_archive,,,,
