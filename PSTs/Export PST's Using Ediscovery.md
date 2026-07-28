@@ -9,7 +9,7 @@
 
 <img width="568" height="756" alt="image" src="https://github.com/user-attachments/assets/36fbce78-947f-4b8b-a759-3fa969ae286b" />
 
-4. Login to the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com/) go to Content search, and click the New search button.
+4. Login to the [Microsoft Purview Compliance Portal](https://purview.microsoft.com/) go to Content search, and click the New search button.
 
 <img width="575" height="404" alt="image" src="https://github.com/user-attachments/assets/12ea5c16-2dc1-4373-afeb-ffaf4707e9b9" />
 
