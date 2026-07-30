@@ -27,7 +27,7 @@ Before creating a dynamic group, ensure you have:
 
 # Create a Dynamic Group
 
-1. Sign in to the **Microsoft Entra admin center**.
+1. Sign in to the **Microsoft Entra admin center**. https://portal.azure.com/
 2. Navigate to:
 
 ```text
